@@ -46,7 +46,7 @@ node
     {
         stage('Coverage testing')
         {
-            sh 'mvn cobertura:cobertura'
+            echo 'mvn cobertura:cobertura'
         }
     }
     if (env.SECURITY_TESTING == 'True')
@@ -60,7 +60,7 @@ node
     {
         stage('sonar testing')
         {
-            sh 'sonar:sonar'
+            sh 'mvn sonar:sonar'
         }
     }
 }
