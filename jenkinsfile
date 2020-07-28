@@ -46,7 +46,7 @@ node
     {
         stage('Coverage testing')
         {
-            sh 'cobertura:cobertura'
+            sh 'mvn cobertura:cobertura'
         }
     }
     if (env.SECURITY_TESTING == 'True')
