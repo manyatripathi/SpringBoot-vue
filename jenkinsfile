@@ -25,13 +25,13 @@ node
     }
     stage('Initial setup')
     {
-        bat 'mvnw clean'
+        sh 'mvnw clean'
     }
     if (env.UNIT_TESTING == 'True')
     {
         stage('Unit testing')
         {
-            bat 'mvnw test'
+            sh 'mvnw test'
         }
     }
     if (env.CODE_QUALITY == 'True')
