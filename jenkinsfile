@@ -17,7 +17,7 @@ def FAILED_STAGE
 node
 {
     def MAVEN_HOME = tool "MY_MAVEN"
-    def JAVA_HOME = tool "MY_JAVA"
+    def JAVA_HOME = tool "MY_JDK"
     
     stage('Checkout')
     {
