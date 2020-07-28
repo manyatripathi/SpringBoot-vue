@@ -25,7 +25,7 @@ node
     }
     stage('Initial setup')
     {
-        sh 'mvn clean'
+        echo 'mvn clean'
     }
     if (env.UNIT_TESTING == 'True')
     {
