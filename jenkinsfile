@@ -25,13 +25,13 @@ node
     }
     stage('Initial setup')
     {
-        bat 'mvn clean'
+        bat 'mvnw clean'
     }
     if (env.UNIT_TESTING == 'True')
     {
         stage('Unit testing')
         {
-            bat 'maven test'
+            bat 'mvnw test'
         }
     }
     if (env.CODE_QUALITY == 'True')
